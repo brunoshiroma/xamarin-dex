@@ -16,7 +16,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
     <AndroidUseAapt2>true</AndroidUseAapt2>
@@ -103,7 +102,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\xamarin-dex\xamarin-dex.csproj">
-      <Project>{E70BFDFF-00A1-4A90-9A8D-7498E11895CF}</Project>
+      <Project>{12E77D30-6B84-4757-A787-484498E71EA0}</Project>
       <Name>xamarin-dex</Name>
     </ProjectReference>
   </ItemGroup>
