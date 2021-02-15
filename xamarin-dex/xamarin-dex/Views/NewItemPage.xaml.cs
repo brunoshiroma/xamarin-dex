@@ -11,7 +11,7 @@ namespace xamarin_dex.Views
 {
     public partial class NewItemPage : ContentPage
     {
-        public Item Item { get; set; }
+        public Pokemon Item { get; set; }
 
         public NewItemPage()
         {

@@ -49,11 +49,9 @@ namespace xamarin_dex.ViewModels
 
         private async void OnSave()
         {
-            Item newItem = new Item()
+            Pokemon newItem = new Pokemon()
             {
-                Id = Guid.NewGuid().ToString(),
-                Text = Text,
-                Description = Description
+                Name = Text
             };
 
             await DataStore.AddItemAsync(newItem);

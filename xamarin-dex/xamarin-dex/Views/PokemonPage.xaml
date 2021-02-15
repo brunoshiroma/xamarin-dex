@@ -20,15 +20,15 @@
                 SelectionMode="None">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <StackLayout Padding="10" x:DataType="model:Item">
-                        <Label Text="{Binding Text}"
+                    <StackLayout Padding="10" x:DataType="model:Pokemon">
+                        <Label Text="{Binding Name}"
                                TextColor="Black"
                             LineBreakMode="NoWrap" 
                             Style="{DynamicResource ListItemTextStyle}" 
                             FontSize="16" />
                         <Image 
-                            Source="{Binding ImageUrl}"/>
-                        <Label Text="{Binding Description}" 
+                            Source="{Binding ImagesUrl}"/>
+                        <Label Text="{Binding DexEntry}" 
                             LineBreakMode="NoWrap"
                             Style="{DynamicResource ListItemDetailTextStyle}"
                             FontSize="13" />

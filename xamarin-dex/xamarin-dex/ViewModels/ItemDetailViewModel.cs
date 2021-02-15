@@ -3,6 +3,7 @@ using System.Diagnostics;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using xamarin_dex.Models;
+using System.Linq;
 
 namespace xamarin_dex.ViewModels
 {
@@ -44,9 +45,9 @@ namespace xamarin_dex.ViewModels
             try
             {
                 var item = await DataStore.GetItemAsync(itemId);
-                Id = item.Id;
-                Text = item.Text;
-                Description = item.Description;
+                Id = item.NationalNumber.ToString();
+                Text = item.Name;
+                Description = item.DexEntry.Values.FirstOrDefault();
             }
             catch (Exception)
             {
